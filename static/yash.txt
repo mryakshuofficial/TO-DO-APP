@@ -1,0 +1,1 @@
+hello yash this is way of when user found to any files which static in static folder. and they can access this file.
