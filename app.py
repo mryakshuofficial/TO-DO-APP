@@ -1,6 +1,7 @@
 from flask import Flask , render_template ,request , redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///todo.db"
 # app.config['SQLALCHEMY_DATABASE_URI'] = False
@@ -50,5 +51,6 @@ def update(sno):
 
 with app.app_context():
     db.create_all()
+    
 if __name__ == "__main__":
     app.run(debug=True,port=8000)
